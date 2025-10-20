@@ -1,12 +1,13 @@
 /* eslint-disable no-useless-catch */
 
-import config from "../../config/config";
+import config from "../../config/config.js";
 import { Client, Account, ID } from "appwrite";
 
 
 export class AuthService {
     client = new Client();
     account;
+    
 
     constructor() {
         this.client
