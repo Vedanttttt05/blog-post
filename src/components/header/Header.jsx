@@ -5,17 +5,16 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 
-// CORRECT: Importing directly from the component's file
 import LogoutBtn from './LogoutBtn.jsx'; 
 import Logo from '../Logo.jsx';
 import Container from '../container/Container.jsx';
 
+ 
 function Header() {
     const authStatus = useSelector((state) => state.auth.status);
     const navigate = useNavigate();
 
     const navItems = [
-        // ... (your navItems array is fine and doesn't need to change)
         { name: 'Home', slug: "/", active: true },
         { name: "Login", slug: "/login", active: !authStatus },
         { name: "Signup", slug: "/signup", active: !authStatus },
