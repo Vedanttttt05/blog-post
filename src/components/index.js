@@ -1,6 +1,35 @@
-// index.js - Use this format
-export { default as Header } from "./header/Header.jsx"
-export { default as Footer } from "./footer/Footer.jsx" 
-export { default as Container } from "./container/Container"
-export { default as Logo } from "./Logo"
-export { default as LogoutBtn } from "./header/LogoutBtn.jsx"
+
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import Container from "./container/Container";
+import Logo from "./Logo";
+import LogoutBtn from "./header/LogoutBtn";
+import RTE from "./RTE";
+import Signup from "./Signup";
+import Login from "./Login";
+import Button from "./Button";
+import PostForm from "./post-form/PostForm";
+import PostCard from "./PostCard";
+import AuthLayout from "./AuthLayout";
+import Input from "./Input";
+import Select from "./Select";
+
+
+
+
+export {
+    Header,
+    Footer,
+    Container,
+    Logo,
+    LogoutBtn,
+    RTE,
+    Signup,
+    Login,
+    Button,
+    PostForm,
+    PostCard,
+    AuthLayout, 
+    Input,
+    Select,
+}
